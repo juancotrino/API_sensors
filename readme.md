@@ -21,7 +21,7 @@ It should be clarified that these assumptions make error handling less relevant 
 
 Simply create a local virtual environment with Python 3.8.13 in a new directory, and from there install it by executing the following command:
 
-```pip install -r requirements.txt````
+```pip install -r requirements.txt```
 
 ## PostgreSQL server acces configuration
 
@@ -29,11 +29,11 @@ Please edit the file `local_settings.py` with your respective credentials to con
 
 ## Running the API
 
-Please `cd`into the directory of the project, and from there execute the following command:
+Please `cd` into the directory of the project, and from there execute the following command:
 
-```python main.py````
+`python main.py`
 
-Then open this link[http://127.0.0.1:8000/docs] and follow the instructions of the end points.
+Then open this [link](http://127.0.0.1:8000/docs) and follow the instructions of the end points.
 
 ## Privacy
 
