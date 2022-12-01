@@ -19,7 +19,7 @@ It should be clarified that these assumptions make error handling less relevant 
 
 ## Installation
 
-Simply create a local virtual environment with Python 3.8.13 in a new directory, and from there install this tool by executing the following command:
+Simply create a local virtual environment with Python 3.8.13 in a new directory. This directory should contain all the files of this package inside (regular download or cloning the repository), and from there, install this tool by executing the following command in the terminal:
 
 ```
 pip install -r requirements.txt
@@ -27,11 +27,11 @@ pip install -r requirements.txt
 
 ## PostgreSQL server acces configuration
 
-Please edit the file `local_settings.py` with your respective credentials to connect to a PostgreSQL server.
+Please edit the file `local_settings.py` with your respective credentials to stablish the connection to a PostgreSQL server.
 
 ## Running the API
 
-Please `cd` into the directory of the project, and from there execute the following command:
+Please `cd` into the directory of the project, and from there execute the following command in the terminal:
 
 ```
 python main.py
