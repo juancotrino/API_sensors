@@ -80,7 +80,7 @@ def class_for_name(module_name, class_name):
 
 
 def check_agreggation_minutes(aggregation):
-    if aggregation != 5 or aggregation != 60:
+    if aggregation != 5 and aggregation != 60:
         raise HTTPException(status_code=404,
                             headers={"X-Error": 'Check minutes of aggregation'},
                             detail={'It is only possiblee to aggregate by 5 minutes or 60 minutes (1 hour)'})

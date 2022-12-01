@@ -62,4 +62,8 @@ def execute_sql_query(table_name, query, db):
 
     aggregated_values = db.execute(sql_raw_query).all()
 
+    # Not the best way to deal with this error
+    if aggregated_values[-1][0] == None:
+        del aggregated_values[-1]
+
     return aggregated_values

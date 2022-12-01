@@ -13,6 +13,7 @@ For the development of the API, all points required in the assignment have been 
 - The maximum resolution that the user can input for the time parameters is 1 minute.
 - One sensor is capable to take multiple types of measurements (parameters).
 - The user will always chose a time window available on the database.
+- The user can only choose times that are multiple of 5 minutes to retrieve data.
 - The API will run locally connected to a local server, no containers were asked.
 
 It should be clarified that these assumptions make error handling less relevant under ideal conditions. Error handling was not mentioned in the assignment, so not much emphasis was placed on it during the development of the tool.
