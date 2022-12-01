@@ -21,6 +21,7 @@ It is assumed that:
     - The maximum resolution that the user can input for the time parameters is 1 minute.
     - One sensor is capable to take multiple types of measurements (parameters).
     - The user will always chose a time window available on the database.
+    - The API will run locally connected to a local server, no containers were asked.
 """
 
 
