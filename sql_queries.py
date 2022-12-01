@@ -4,8 +4,6 @@ from datetime import datetime as dt
 from sqlalchemy import func
 from sqlalchemy import text
 
-#from database import engine
-
 
 def execute_sql_query(table_name, query, db):
 
