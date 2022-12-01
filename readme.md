@@ -1,4 +1,4 @@
-# API SENSOR INTERACTION
+# API Sensor Interaction
 ## Description
 
 This library corresponds to an assignment given by the company 720° in the recruitment process for the position of software developer.
@@ -19,9 +19,11 @@ It should be clarified that these assumptions make error handling less relevant 
 
 ## Installation
 
-Simply create a local virtual environment with Python 3.8.13 in a new directory, and from there install it by executing the following command:
+Simply create a local virtual environment with Python 3.8.13 in a new directory, and from there install this tool by executing the following command:
 
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 ## PostgreSQL server acces configuration
 
@@ -31,10 +33,16 @@ Please edit the file `local_settings.py` with your respective credentials to con
 
 Please `cd` into the directory of the project, and from there execute the following command:
 
-`python main.py`
+```
+python main.py
+```
 
-Then open this [link](http://127.0.0.1:8000/docs) and follow the instructions of the end points.
+Then open this [link](http://127.0.0.1:8000/docs) and follow the instructions for each endpoint.
+
+## Notes
+
+For the `get` endpoint, according to the assignment, the user is only able to retrieve parameters (measurement type) aggregated with temporal resolution of 5 minutes or 60 minutes (1 hour). It is important to pass this parameter in minutes, either `5` or `60`.
 
 ## Privacy
 
-The original assignment won't be share here due to possible privacy requirements of the company 720°.
+The original assignment won't be shared or further discussed here due to possible privacy policies that 720° might have.
