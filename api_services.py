@@ -41,6 +41,8 @@ async def write_data_from_sensor(parameter: str,
 async def retrieve_data(query: dict,
                         db: "Session") -> List[schema.RetrieveData]:
 
+    check_agreggation_minutes(query['aggregation_time'])
+
     # Checks what is the parameter the data is coming from
     parameter_name = check_parameter(query['parameter'])
 
@@ -75,3 +77,10 @@ def class_for_name(module_name, class_name):
     m = importlib.import_module(module_name)
     c = getattr(m, class_name)
     return c
+
+
+def check_agreggation_minutes(aggregation):
+    if aggregation != 5 or aggregation != 60:
+        raise HTTPException(status_code=404,
+                            headers={"X-Error": 'Check minutes of aggregation'},
+                            detail={'It is only possiblee to aggregate by 5 minutes or 60 minutes (1 hour)'})
